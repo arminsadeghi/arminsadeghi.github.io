@@ -15,9 +15,9 @@
   padding-right: 2em;
   font-family: $sans-serif;
   -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.30s;
-          animation-delay: 0.30s;
+  animation: intro 0.3s both;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 
   @include breakpoint($large) {
     padding-left: 1em;
@@ -50,7 +50,6 @@
     font-weight: bold;
   }
 }
-
 
 /*
    Post pagination navigation links
@@ -167,7 +166,6 @@
   border-top: 1px solid var(--global-border-color);
 }
 
-
 /*
    Priority plus navigation
    ========================================================================== */
@@ -224,12 +222,16 @@
         }
       }
     }
-
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     #theme-toggle {
       a {
         width: 25px;
         display: flex;
-        justify-content: center;
+        justify-content: right;
         cursor: pointer;
       }
     }
@@ -248,14 +250,14 @@
         -webkit-transition: $global-transition;
         transition: $global-transition;
         -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
+        -ms-transform: scaleX(0);
+        transform: scaleX(0); /* hide*/
       }
 
       &:hover:before {
         -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); /* reveal*/
       }
     }
   }
@@ -319,7 +321,6 @@
   }
 }
 
-
 /*
    Navigation list
    ========================================================================== */
@@ -374,7 +375,6 @@
   text-transform: uppercase;
   border-bottom: 1px solid var(--global-border-color);
 }
-
 
 /*
    Table of contents navigation

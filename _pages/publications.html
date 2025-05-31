@@ -5,32 +5,227 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+{% if site.author.googlescholar %} You can also find my articles on
+<a href="{{site.author.googlescholar}}">Google Scholar</a>. {% endif %} {%
+include base_path %}
 
-{% include base_path %}
+<!--
+\\
+\\
+\\Patents
+\\
+\\
+\\-->
+<h2>Patents</h2>
+<span style="font-size: 16px">
+  <strong>[P1]</strong> <b>Sadeghi A.</b>, Gilhuly B., Yedmellat P., Rezaee K.,
+  Smith S. L. (2023). "Systems, methods, and media for occlusion-aware motion
+  planning", <i>US11834077B2</i>.
+</span>
+<a href="https://patents.google.com/patent/US11834077B2/en">
+  <img src="https://img.shields.io/badge/patent-blue" alt="Paper PDF" />
+</a>
+<!--
+\\
+\\
+\\Journal articles
+\\
+\\
+\\-->
+<h2>Journal Articles</h2>
+<span style="font-size: 16px">
+  <strong>[J1]</strong> Botros A., Wilde N., <b>Sadeghi A.</b>, Alonso-Mora J.,
+  and Smith S. L. (2024). "Regret-based Sampling of Pareto Fronts for
+  Multi-Objective Robot Planning Problems",
+  <i>IEEE Robotics and Automation Letters</i>.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/10599820">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<br />
+<span style="font-size: 16px">
+  <strong>[J2]</strong> Gilhuly B., <b>Sadeghi A.</b>, and Smith S. L. (2024).
+  "Estimating Visibility from Alternate Perspectives for Motion Planning with
+  Occlusions", <i>IEEE Robotics and Automation Letters</i>.
+</span>
+<a href="https://arxiv.org/abs/2404.07781">
+  <img
+    src="https://img.shields.io/badge/arXiv-2404.07781-red"
+    alt="Paper PDF"
+  />
+</a>
 
+<br />
+<span style="font-size: 16px">
+  <strong>[J3]</strong> Walker T., Gilhuly B., <b>Sadeghi A.</b>, and Smith S.
+  L. (2024). "Predictive Dead Reckoning for Online Peer-to-Peer Games",
+  <i>IEEE Transactions on Games</i>.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/10020168">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
 
+<br />
+<span style="font-size: 16px">
+  <strong>[J4]</strong> <b>Sadeghi A.</b>, Asghar, A. B., and Smith S. L.
+  (2022). "Distributed Multirobot Coverage Control of Nonconvex Environments
+  With Guarantees", <i>IEEE Transactions on Control of Network Systems</i>.
+</span>
+<a href="https://ieeexplore.ieee.org/document/9904913">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
 
+<br />
+<span style="font-size: 16px">
+  <strong>[J5]</strong> Tsang F., Walker T., MacDonald R. A., <b>Sadeghi A.</b>,
+  and Smith S. L. (2022). "LAMP: Learning a Motion Policy to Repeatedly Navigate
+  in an Uncertain Environment", <i>IEEE Transactions on Robotics</i>.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/9543610">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+
+<br />
+<span style="font-size: 16px">
+  <strong>[J6]</strong> Wilde N., <b>Sadeghi A.</b>, and Smith S. L. (2022).
+  "Learning Submodular Objectives for Team Environmental Monitoring",
+  <i>IEEE Robotics and Automation Letters</i>.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/9653829">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+
+<br />
+<span style="font-size: 16px">
+  <strong>[J7]</strong> <b>Sadeghi A.</b>, and Smith S. L. (2021). "Rebalancing
+  Self-Interested Drivers in Ride-Sharing Networks to Improve Customer
+  Wait-Time", <i>IEEE Transactions on Control of Network Systems</i>.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/9424428">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+
+<br />
+<span style="font-size: 16px">
+  <strong>[J8]</strong> <b>Sadeghi A.</b>, and Smith S. L. (2017).
+  "Heterogeneous Task Allocation and Sequencing via Decentralized Large
+  Neighborhood Search", <i>Unmanned Systems</i>.
+</span>
+<a href="https://www.worldscientific.com/doi/abs/10.1142/S2301385017500066">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<img src="https://img.shields.io/badge/Best Paper Award-red" alt="Paper PDF" />
+
+<h2>Conference Papers</h2>
+<span style="font-size: 16px">
+  <strong>[C1]</strong> Botros A., Gilhuly B., Wilde N., <b>Sadeghi A.</b>,
+  Alonso-Mora J., Smith S. L. (2023). "Optimizing Task Waiting Times in Dynamic
+  Vehicle Routing",
+  <i>IEEE International Conference on Robotics and Automation</i>.
+</span>
+<a href="https://arxiv.org/pdf/2307.03984.pdf">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C2]</strong> D'Urso G., <b>Sadeghi A.</b>, Yoo C., Smith S. L., Fitch
+  R. (2023). "Distributed Multi-robot Equitable Partitioning Algorithm for
+  Allocation in Warehouse Picking Scenarios",
+  <i
+    >IEEE International Conference on Automation Science and Engineering
+    (CASE)</i
+  >.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/10260450">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C3]</strong> Botros A., <b>Sadeghi A.</b>, Wilde N., Alonso-Mora J.,
+  Smith S. L. (2023). "Error-Bounded Approximation of Pareto Fronts in Robot
+  Planning Problems",
+  <i>Workshop on the Algorithmic Foundations of Robotics (WAFR)</i>.
+</span>
+<a href="https://arxiv.org/abs/2206.00663">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C4]</strong> Gilhuly B., <b>Sadeghi A.</b>, Yedmellat P., Rezaee K.,
+  Smith S. L. (2022). "Looking for Trouble: Informative Planning for Safe
+  Trajectories with Occlusions",
+  <i>IEEE International Conference on Robotics and Automation</i>, Philadelphia,
+  USA.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/9811994">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C5]</strong> <b>Sadeghi A.</b>, Asghar A. B., Smith S. L. (2020).
+  "Approximation Algorithms for Distributed Multi-Robot Coverage in Non-Convex
+  Environments",
+  <i
+    >The 14th International Workshop on the Algorithmic Foundations of Robotics
+    (WAFR)</i
+  >, Oulu, Finland.
+</span>
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-66723-8_20">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C6]</strong> <b>Sadeghi A.</b>, Smith S. L. (2019). "On Re-Balancing
+  Self-Interested Agents in Ride-Sourcing Transportation Networks",
+  <i>IEEE Conference on Decision and Control</i>, Nice, France.
+</span>
+<a
+  href="https://ece.uwaterloo.ca/~sl2smith/papers/2019CDC-Rebalancing_Ride-Sourcing"
+>
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C7]</strong> <b>Sadeghi A.</b>, Asghar A. B., Smith S. L. (2019).
+  "Multi-Robot Information Gathering: Minimizing the Time to Collect a
+  Guaranteed Amount of Total Reward",
+  <i>IEEE International Symposium on Multi-Robot and Multi-Agent Systems</i>,
+  New Brunswick, NJ.
+</span>
+<a
+  href="https://ece.uwaterloo.ca/~sl2smith/papers/2019MRS-Min_Time_Multi-Robot.pdf"
+>
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C8]</strong> <b>Sadeghi A.</b>, Smith S. L. (2019). "Coverage Control
+  for Multiple Event Types with Heterogeneous Robots",
+  <i>IEEE International Conference on Robotics and Automation</i>, Montreal,
+  Canada.
+</span>
+<a
+  href="https://ece.uwaterloo.ca/~sl2smith/papers/2019ICRA-Coverage_Control.pdf"
+>
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C9]</strong> <b>Sadeghi A.</b>, Smith S. L. (2018). "Re-Deployment
+  Algorithms for Multiple Service Robots to Optimize Task Response",
+  <i>IEEE International Conference on Robotics and Automation</i>, Brisbane,
+  Australia.
+</span>
+<a href="https://ece.uwaterloo.ca/~sl2smith/papers/2018ICRA_ReDeployment.pdf">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
+<br />
+<span style="font-size: 16px">
+  <strong>[C10]</strong> <b>Sadeghi A.</b>, Smith S. L. (2016). "On Efficient
+  Computation of Shortest Dubins Paths Through Three Consecutive Points",
+  <i>IEEE Conference on Decision and Control</i>, Las Vegas, NV.
+</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/7799192">
+  <img src="https://img.shields.io/badge/paper-purple" alt="Paper PDF" />
+</a>
