@@ -17,10 +17,10 @@ $(document).ready(function () {
       browserPref;
 
     if (use_theme === "dark") {
-      $("html").attr("data-theme", "dark");
+      $("html").attr("data-theme", "light");
       $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
     } else if (use_theme === "light") {
-      $("html").removeAttr("data-theme");
+      $("html").attr("data-theme", "light");
       $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
     }
   };
@@ -28,23 +28,23 @@ $(document).ready(function () {
   setTheme();
 
   // if user hasn't chosen a theme, follow OS changes
-  window
-    .matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener("change", (e) => {
-      if (!localStorage.getItem("theme")) {
-        setTheme(e.matches ? "dark" : "light");
-      }
-    });
+  // window
+  //   .matchMedia('(prefers-color-scheme: dark)')
+  //   .addEventListener("change", (e) => {
+  //     if (!localStorage.getItem("theme")) {
+  //       setTheme("light");
+  //     }
+  //   });
 
   // Toggle the theme manually
-  var toggleTheme = function () {
-    const current_theme = $("html").attr("data-theme");
-    const new_theme = current_theme === "dark" ? "light" : "dark";
-    localStorage.setItem("theme", new_theme);
-    setTheme(new_theme);
-  };
+  // var toggleTheme = function () {
+  //   const current_theme = $("html").attr("data-theme");
+  //   const new_theme = current_theme === "dark" ? "light" : "dark";
+  //   localStorage.setItem("theme", new_theme);
+  //   setTheme(new_theme);
+  // };
 
-  $('#theme-toggle').on('click', toggleTheme);
+  // $('#theme-toggle').on('click', toggleTheme);
 
   // These should be the same as the settings in _variables.scss
   const scssLarge = 925; // pixels
@@ -84,10 +84,10 @@ $(document).ready(function () {
   });
 
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({ 
+  $("a").smoothScroll({
     offset: -75, // needs to match $masthead-height
     preventDefault: false,
-  }); 
+  });
 
   // add lightbox class to all image links
   // Add "image-popup" to links ending in image extensions,
@@ -98,14 +98,14 @@ $(document).ready(function () {
   a[href$='.png'],\
   a[href$='.gif'],\
   a[href$='.webp']")
-      .not(':has(img)')
-      .addClass("image-popup");
+    .not(':has(img)')
+    .addClass("image-popup");
 
   // 1) Wrap every <p><img> (except emoji images) in an <a> pointing at the image, and give it the lightbox class
-  $('p > img').not('.emoji').each(function() {
+  $('p > img').not('.emoji').each(function () {
     var $img = $(this);
     // skip if it’s already wrapped in an <a.image-popup>
-    if ( ! $img.parent().is('a.image-popup') ) {
+    if (!$img.parent().is('a.image-popup')) {
       $('<a>')
         .addClass('image-popup')
         .attr('href', $img.attr('src'))
