@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-I am Armin Sadeghi, PhD, software engineer and researcher at RideCo. I completed my PhD in Robotics at the University of Waterloo in 2020, under the supervision of Professor [Stephen L. Smith](https://ece.uwaterloo.ca/~sl2smith/). Prior to that, I received my Master's degree in Robotics from the University of Waterloo and double Bachelor's degrees in Mechanical Engineering and Aerospace Engineering from the Sharif University of Technology in Iran. My research interests include multi-robot systems, reinforcement learning and optimization.
+
+I am Armin Sadeghi, Ph.D., a software engineer and researcher at RideCo. I earned my Ph.D. in Robotics from the University of Waterloo in 2020, under the supervision of Professor [Stephen L. Smith](https://ece.uwaterloo.ca/~sl2smith/). Before that, I completed a Master’s degree in Robotics at the University of Waterloo and earned dual Bachelor’s degrees in Mechanical Engineering and Aerospace Engineering from Sharif University of Technology in Iran. My research interests include multi-robot systems, reinforcement learning, and optimization.
 
 ## Selected Publications
 
